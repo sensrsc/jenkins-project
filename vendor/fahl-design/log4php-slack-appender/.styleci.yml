@@ -1,0 +1,11 @@
+preset: recommended
+
+risky: false
+
+finder:
+  exclude:
+    - "src/test"
+  name:
+    - "*.php"
+  path:
+    - "src/main"

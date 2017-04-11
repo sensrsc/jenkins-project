@@ -1,0 +1,22 @@
+<phpunit
+        bootstrap="src/test/bootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnFailure="false"
+        processUncoveredFilesFromWhitelist="true">
+
+    <testsuites>
+        <testsuite name="log4php-slack">
+            <directory suffix=".php">src/test/php</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/main/php</directory>
+        </whitelist>
+    </filter>
+
+</phpunit>
